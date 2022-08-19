@@ -259,14 +259,14 @@ function move() {
 }   
 
 function cart() {
-	let amount = document.getElementById("amount").value;
-	let sell_price = document.getElementById("sell_price").value;
-	let psize = document.getElementById("option_size").value; 
-	let sum = sell_price * amount;
-	
+   let amount = document.getElementById("amount").value;
+   let sell_price = document.getElementById("sell_price").value;
+   let psize = document.getElementById("option_size").value; 
+   let sum = sell_price * amount;
+   
 
-	// 스페이스바 주의 null값 우려
-	location.href ="buyingmypageinsert?p_code=${indto.p_code }"+"&amount="+ amount +"&sell_price="+sum +"&p_price=" +sell_price+"&p_size="+psize; 
+   // 스페이스바 주의 null값 우려
+   location.href ="buyingmypageinsert?p_code=${indto.p_code }"+"&amount="+ amount +"&sell_price="+sum +"&p_price=" +sell_price+"&p_size="+psize; 
 
 }
 </script>
@@ -285,7 +285,7 @@ function cart() {
     <br>
     <div class="div3">
         <figure>
-            <img src="${indto.p_img }" id="image1" 
+            <img src="resources/upload/p_img/${indto.p_img}" id="image1" 
             width="600" height="550" style="border: 1px solid #ccc;">
             <figcaption> </figcaption>
         </figure>
@@ -364,8 +364,20 @@ function cart() {
      
         <section id="content1">
             <p>
-                <img src="resources/img/rengoku2.jpeg" alt="rengoku2"
-                width="800" height="1000">
+                <img src="resources/upload/p_img/${indto.p_img2}" alt="rengoku2"
+                width="700" height="900">
+            </p>
+            <p>
+                <img src="resources/upload/p_img/${indto.p_img3}" alt="rengoku2"
+               width="700" height="900">
+            </p>
+            <p>
+                <img src="resources/upload/p_img/${indto.p_img4}" alt="rengoku2"
+               width="700" height="900">
+            </p>
+            <p>
+                <img src="resources/upload/p_img/${indto.p_img5}" alt="rengoku2"
+               width="700" height="900">
             </p>
 
         </section>
