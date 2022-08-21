@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Manager_Members Details</title>
+<title>회원 관리 상세</title>
 <link rel="stylesheet" href="resources/css/cs/manager.css?after" />
 <link rel="stylesheet" href="resources/css/cs/manager2.css?after" />
 </head>
@@ -15,7 +15,7 @@
 <%@include file="../cs_nav/manager_nav.jsp" %>
 	<div class="manager_board">
 		<div class="manager_main_title">
-			<h3>Manager_Members Details</h3>
+			<h3>회원 관리 상세</h3>
 		</div>
 	
 		<div>

@@ -30,7 +30,7 @@
 				</table>
 				<div class="paging2">
 					<a href="noticeboard">목록</a> &nbsp;&nbsp;
-					<c:if test="${ mid eq 'admin0001' }"> 
+					<c:if test="${ mgrade eq '관리자' }"> 
 						<input type="submit" value="수정" class="modify_btn" /> &nbsp;&nbsp;
 						<a href="delete?nnum=${content_view.nnum}">삭제</a> &nbsp;&nbsp;
 					</c:if>

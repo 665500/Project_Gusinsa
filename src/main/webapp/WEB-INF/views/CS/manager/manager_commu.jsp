@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Manager_Commu</title>
+<title>고객의 소리 관리</title>
 <link rel="stylesheet" href="resources/css/cs/manager.css?after" />
 <link rel="stylesheet" href="resources/css/cs/manager2.css?after" />
 <link rel="stylesheet" href="resources/css/cs/board.css?after" />
@@ -16,7 +16,7 @@
 <%@include file="../cs_nav/manager_nav.jsp" %>  
 	<div class="manager_board">
 		<div class="manager_main_title">
-			<h3>Manager_Commu</h3>
+			<h3>고객의 소리 관리</h3>
 		</div>
 		
 		<div>

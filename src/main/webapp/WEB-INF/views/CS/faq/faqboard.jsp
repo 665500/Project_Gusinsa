@@ -34,7 +34,7 @@
 	        <tr>
 	            <th class="faqboard_header">분류</th>
 	            <th class="faqboard_title">제목</th>
-	            <th class="faqboard_date">날짜</th>
+	            <th class="faqboard_date">작성일자</th>
 	        </tr>
 	        <c:forEach items="${faqboard }" var="dto" begin="0" end="10">
 	        
@@ -47,7 +47,7 @@
 	            </tr>
 	            <tr class="faqcontent">
 	            	<td colspan="3" class="faqcontent2"><pre> ${dto.fcontent }</pre>
-						<c:if test="${ mid eq 'admin0001' }">	
+						<c:if test="${ mgrade eq '관리자' }">	
 							<a href="faqdelete?fnum=${dto.fnum}">삭제</a>
 						</c:if>	
 	            	</td>
@@ -55,7 +55,7 @@
 	        </c:forEach>
 	    </table>
 	    <div class="write_button">
-	    	<c:if test="${ mid eq 'admin0001' }">
+	    	<c:if test="${ mgrade eq '관리자' }">
 	        	<a href="faq_writeview">글쓰기</a>
 	        </c:if>
 	    </div>

@@ -304,7 +304,7 @@ counter_init();
                          <c:if test="${not empty mid }"> 
                         <li id="sidebar_li"><a href="${pageContext.request.contextPath }/mypage_orderlist" id="sidebar_li_a" style="color: rgb(255, 255, 255);" ><b>마이페이지</b></a></li>
                          </c:if>
-                         <c:if test="${mid eq 'admin0001'}"> 
+                         <c:if test="${mgrade eq '관리자'}"> 
                          <li id="sidebar_li"><a href="${pageContext.request.contextPath }/manager_inquiry" id="sidebar_li_a" style="color: rgb(255, 255, 255);" ><b>매니저 페이지</b></a></li>
                         </c:if>
                     </ul>

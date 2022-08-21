@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Manager_Commu</title>
+<title>고객의 소리 상세</title>
 <link rel="stylesheet" href="resources/css/cs/manager.css?after" />
 <link rel="stylesheet" href="resources/css/cs/manager2.css?after" />
 </head>

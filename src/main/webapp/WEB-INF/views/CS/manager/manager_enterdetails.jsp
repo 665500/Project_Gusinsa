@@ -6,7 +6,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Manager_Enterdetails</title>
+<title>입점문의 상세</title>
 <link rel="stylesheet" href="resources/css/cs/enter.css?after" />
 <link rel="stylesheet" href="resources/css/cs/main.css?after" />
 <link rel="stylesheet" href="resources/css/cs/board.css?after" />
@@ -19,7 +19,7 @@
 <%@include file="../cs_nav/manager_nav.jsp" %>
 	<div class="manager_board">
 		<div class="manager_main_title">
-			<h3>Manager_Enterdetails</h3>
+			<h3>입점문의 상세</h3>
 		</div>
 			<div class="enter_form">
 	            <div class="enter_title">

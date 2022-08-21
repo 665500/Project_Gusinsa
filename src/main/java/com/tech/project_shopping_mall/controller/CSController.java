@@ -39,16 +39,17 @@ public class CSController {
 		
 	}
 	
-
 	@RequestMapping("/noticeboard")
 	public String notice(HttpServletRequest request,SearchVO_CS searchVO,Model model) {
 		System.out.println("======NoticeBoard=======");
 		
 		HttpSession session = request.getSession();
 		String mid=(String)session.getAttribute("mid");
+		String mgrade=(String)session.getAttribute("mgrade");
+
 		
 		CSDao dao=sqlSession.getMapper(CSDao.class);
-		
+	
 		String ntitle="";
 		String ncontent="";
 		

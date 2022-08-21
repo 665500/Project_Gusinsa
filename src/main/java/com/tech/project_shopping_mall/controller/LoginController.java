@@ -51,6 +51,7 @@ public class LoginController {
 		
 		String mid = request.getParameter("mid");
 		String mpw = request.getParameter("mpw");
+		String mgrade = request.getParameter("mgrade");
 		
 		LoginMapper dao=sqlSession.getMapper(LoginMapper.class);
 		MembersDto rtnDto = dao.selectUserPassword(mid);
@@ -63,6 +64,7 @@ public class LoginController {
 				HttpSession session=request.getSession();
 				session.setAttribute("mid", rtnDto.getMid());
 				session.setAttribute("mpw", rtnDto.getMpw());
+				session.setAttribute("mgrade", rtnDto.getMgrade());
 				System.out.println("아이디와 비밀번호가 맞았습니다");
 				session.setMaxInactiveInterval(1800);
 			}else {
