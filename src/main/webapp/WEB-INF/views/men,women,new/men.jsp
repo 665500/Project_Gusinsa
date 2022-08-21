@@ -22,9 +22,9 @@
     <table class="tb1" style=" position: relative; left: 350px;">
         <tr class="tr1">
             <td><a href="" id="tb1">인기상품순</a>&nbsp;|&nbsp;</td>
-            <td><a href="" id="tb1">신상품순</a>&nbsp;|&nbsp;</td>  
-            <td><a href="" id="tb1">낮은가격순</a>&nbsp;|&nbsp;</td>  
-            <td><a href="" id="tb1">높은가격순<a href="">${p_name }</a><a href="">${Men.p_name }</a></a></td>  
+            <td><a href="datedesc" id="tb1">신상품순</a>&nbsp;|&nbsp;</td>  
+            <td><a href="Pricelistasc" id="tb1">낮은가격순</a>&nbsp;|&nbsp;</td>  
+            <td><a href="Pricelistdesc" id="tb1">높은가격순<a href="">${p_name }</a><a href="">${Men.p_name }</a></a></td>  
         </tr>
         
     </table>
@@ -35,33 +35,36 @@
     </table>
     <table class="category_bt">
         <tr>
-            <td><a href="./men.outer.html">OUTER</a></td>
+            <td><a href="./menouter">OUTER</a></td>
         </tr>
         <tr>
-            <td><a href="">TOP</a></td>
+            <td><a href="/mentop">TOP</a></td>
         </tr>
         <tr>
-            <td><a href="">BOTTOM</a></td>
+            <td><a href="menbottom">BOTTOM</a></td>
         </tr>
         <tr>
-            <td><a href="">ACCESSORIES</a></td>
+            <td><a href="menacc">ACCESSORIES</a></td>
         </tr>
         <tr>
-            <td><a href="">LIFE</a></td>
+            <td><a href="menlife">LIFE</a></td>
         </tr>
     </table>
 
     <table class="t2">
         <tr>
-     	<c:forEach items="${men }" var="dto">
+     	<c:forEach items="${men }" var="dto" varStatus="status">
+     	<c:if test="${status.index%4==0 }">
+          </tr><tr>
+          </c:if> 
             <td class="td1">
                 <a href="BuyPage?p_code=${dto.p_code }">
-                    <img src="${dto.p_img }" width="250" height="350"><p class="p1">${dto.p_name }</p></a>
+                    <img src="resources/upload/p_img/${dto.p_img}" width="250" height="350"><p class="p1">${dto.p_name }</p></a>
                 <a href="BuyPage?p_code=${dto.p_code }"><p class="p1">${dto.p_price } /  ${dto.p_code }</p></a>
             </td>
           
-        </tr>
          </c:forEach>
+        </tr>
     </table>
 
    

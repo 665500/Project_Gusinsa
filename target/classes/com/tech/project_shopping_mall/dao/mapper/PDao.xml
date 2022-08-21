@@ -14,24 +14,24 @@
   </select>
 <select id="men" resultType="com.tech.project_shopping_mall.dto.Infodto">
 SELECT P_CODE,P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM 
-		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_GENDER='남자')
+		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_GENDER='남성')
 		WHERE NUM BETWEEN #{param1} AND #{param2} 
 		<!-- FROM ( SELECT ~ 이 부분부터 추가하니 상품이 차례대로 잘 넘겨짐. 왜인지는 모르겠음... -->
 </select>
     <select id="women" resultType="com.tech.project_shopping_mall.dto.Infodto">
 SELECT P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM 
-		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_GENDER='여자')
+		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_GENDER='여성')
 		WHERE NUM BETWEEN #{param1} AND #{param2} 
 		</select>
   <select id="menbottom" resultType="com.tech.project_shopping_mall.dto.Infodto">
 SELECT P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM 
-		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_CLASS='남자하의')
+		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_CLASS='하의')
 		WHERE NUM BETWEEN #{param1} AND #{param2} 
 		
 </select>
   <select id="menwomenacc" resultType="com.tech.project_shopping_mall.dto.Infodto">
 SELECT P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM 
-		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_CLASS='악세사리')
+		(SELECT * FROM PINFO ORDER BY DATA DESC) N WHERE P_CLASS='악세서리')
 		WHERE NUM BETWEEN #{param1} AND #{param2} 
 		
 </select>
@@ -252,6 +252,12 @@ SELECT P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM
 <select id="womensleeveless" resultType="com.tech.project_shopping_mall.dto.Infodto">
 SELECT P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM 
 		(SELECT * FROM PINFO ORDER BY P_CODE DESC) N WHERE P_CATEGORY='여자슬리브리스')
+		WHERE NUM BETWEEN #{param1} AND #{param2} 
+		
+ </select>	
+<select id="newarrival" resultType="com.tech.project_shopping_mall.dto.Infodto">
+SELECT P_NAME, P_PRICE, P_IMG FROM 	(SELECT ROWNUM NUM,N.* FROM 
+		(SELECT * FROM PINFO ORDER BY P_CODE DESC) N WHERE P_CATEGORY='신상')
 		WHERE NUM BETWEEN #{param1} AND #{param2} 
 		
  </select>	

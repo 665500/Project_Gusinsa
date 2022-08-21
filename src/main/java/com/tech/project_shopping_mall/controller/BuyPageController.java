@@ -38,7 +38,7 @@ public class BuyPageController {
 
       model.addAttribute("indto", indto);
       
-      
+      model.addAttribute("strgdto", strgdto);
       // 여기서부터 리뷰 
 
          String r_title = "";
