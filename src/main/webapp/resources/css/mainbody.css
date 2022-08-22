@@ -1,6 +1,6 @@
 
 
-/*----푸터------------------------------------------------------------------------------------------------------------------------*/
+/*----�뫖�꽣------------------------------------------------------------------------------------------------------------------------*/
  .every{
 width: 100%;
 margin: 0 auto; 
@@ -22,8 +22,8 @@ footer p span {display: inline-block;margin-left: 20px; margin-bottom: 5px;}
 #footer_addr{float: left;}
 .footer_div{margin-top: 20px;margin-right: 30px;float: right; margin-bottom: 10px;}
 
-/*----푸터끝------------------------------------------------------------------------------------------------------------------------*/
-/*이미지슬라이드~~~~~~*/
+/*----�뫖�꽣�걹------------------------------------------------------------------------------------------------------------------------*/
+/*�씠誘몄��뒳�씪�씠�뱶~~~~~~*/
 * {box-sizing: border-box;}
 /* body {font-family: Verdana, sans-serif;}  */
 .mySlides {display: none;}
@@ -134,7 +134,7 @@ display:inline-block
 text-decoration: none;
 font-size: 20px;
 }
-/*최근게시물*/
+/*理쒓렐寃뚯떆臾�*/
 .base_product{
 text-align: center;
 margin-bottom: 30px;
@@ -156,7 +156,7 @@ font-weight: bold;
 }
 
 
-/*사진갤러리*/
+/*�궗吏꾧갇�윭由�*/
 #gallery{margin: 100px;
 list-style: none;
 z-index: 1;}
@@ -185,15 +185,15 @@ z-index: 1;}
   display: none;
 }
 
-#photo{
+/* #photo{
   position: absolute;
   top: 60%; left: 50%;
   transform: translate(-50%, -50%);
 
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 50%;
+  max-height: 50%;
   border: 10px solid white;
-}
+} */
 .background_img{
 width: 100%;
 height: 750px;
@@ -238,7 +238,7 @@ padding-left: 100px;
 #gallery li a:hover{
 width: 100px;
 }
-/*인기있는 브랜드*/
+/*�씤湲곗엳�뒗 釉뚮옖�뱶*/
 .child-page-listing{
     margin-top: 100px;
     margin-bottom: 50px;
@@ -291,7 +291,7 @@ transition: opacity .5s;
 background: rgba(90,0,10,0.4);
 color: white;
 
-/* position the text in t’ middle*/
+/* position the text in t�� middle*/
 display: flex;
 align-items: center;
 justify-content: center;

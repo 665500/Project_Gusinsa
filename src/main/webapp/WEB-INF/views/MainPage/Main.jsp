@@ -12,6 +12,18 @@
 </header>
 </head>
 
+<style>
+ #photo{
+  position: absolute;
+  top: 60%; left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 70%;
+  max-height: 70%;
+  border: 10px solid white;
+} 
+</style>	
+
 <body>
 <%@include file="../../../../resources/common/header.jsp" %>   
  <!--메인포스터-->
@@ -112,44 +124,40 @@
                 <div class="bp_inner">
                     <div class="img">
                         
-                        <img class="top1_img" src="resources/headerimg/gimg_m1.png">
+                        <img class="top1_img" src="resources/upload/p_img/${mendto.p_img }">
                     </div>
                     
                 </div>
                 <div class="spec" is-color-for-list="true" is-size-for-list="true">
                     
-                    <div class="name">[Dasoul] 베이직 기모 맨투맨</div>
+                    <div class="name">${mendto.p_name }</div>
                     <div class="price_info" discount="true">
-                        <div class="price o_price">37,900<span class="line"></span></div>
+                        <div class="price o_price">${mendto.p_price }<span class="line"></span></div>
                     </div>
                 </div>
             </a></div>
     <ul id="gallery">
         <li>
-          <a href="resources/headerimg/gimg_m2.png">
-              <img src="resources/headerimg/gimg_m2.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${mendto.p_img2 }">
+              <img src="resources/upload/p_img/${mendto.p_img2 }" alt="Thumbnail">
           </a>
         </li>
         <li>
-          <a href="resources/headerimg/gimg_m3.png">
-              <img src="resources/headerimg/gimg_m3.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${mendto.p_img3 }">
+              <img src="resources/upload/p_img/${mendto.p_img3 }" alt="Thumbnail">
           </a>
         </li>
         <li>
-          <a href="resources/headerimg/gimg_m4.png">
-              <img src="resources/headerimg/gimg_m4.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${mendto.p_img4 }">
+              <img src="resources/upload/p_img/${mendto.p_img4 }" alt="Thumbnail">
           </a>
         </li>
         <li>
-          <a href="resources/headerimg/gimg_m5.png">
-              <img src="resources/headerimg/gimg_m5.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${mendto.p_img5 }">
+              <img src="resources/upload/p_img/${mendto.p_img5 }" alt="Thumbnail">
           </a>
         </li>
-        <li>
-          <a href="resources/headerimg/gimg_m1.png">
-              <img src="resources/headerimg/gimg_m1.png" alt="Thumbnail">
-          </a>
-        </li>
+
       </ul>
        
       <div id="overlay">
@@ -164,42 +172,38 @@
             <a href="#" style="color: black;">
                 <div class="bp_inner">
                     <div class="img">
-                        <img class="top1_img" src="resources/headerimg/gimg_w1.png">
+                        <img class="top1_img" src="resources/upload/p_img/${womendto.p_img }">
                     </div>
                     
                 </div>
                 <div class="spec" is-color-for-list="true" is-size-for-list="true">
                     
-                    <div class="name">[Dasoul] 베이직 기모 맨투맨</div>
+                    <div class="name">${womendto.p_name }</div>
                     <div class="price_info" discount="true">
-                        <div class="price o_price">37,900<span class="line"></span></div>
+                        <div class="price o_price">${womendto.p_price }<span class="line"></span></div>
                     </div></div></a></div>
     <ul id="gallery">
         <li>
-          <a href="resources/headerimg/gimg_w1.png">
-              <img src="resources/headerimg/gimg_w1.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${womendto.p_img2 }">
+              <img src="resources/upload/p_img/${womendto.p_img2 }" alt="Thumbnail">
           </a>
         </li>
         <li>
-          <a href="resources/headerimg/gimg_w2.png">
-              <img src="resources/headerimg/gimg_w2.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${womendto.p_img3 }">
+              <img src="resources/upload/p_img/${womendto.p_img3 }" alt="Thumbnail">
           </a>
         </li>
         <li>
-          <a href="resources/headerimg/gimg_w3.png">
-              <img src="resources/headerimg/gimg_w3.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${womendto.p_img4 }">
+              <img src="resources/upload/p_img/${womendto.p_img4 }" alt="Thumbnail">
           </a>
         </li>
         <li>
-          <a href="resources/headerimg/gimg_w4.png">
-              <img src="resources/headerimg/gimg_w4.png" alt="Thumbnail">
+          <a href="resources/upload/p_img/${womendto.p_img5 }">
+              <img src="resources/upload/p_img/${womendto.p_img5 }" alt="Thumbnail">
           </a>
         </li>
-        <li>
-          <a href="resources/headerimg/gimg_w5.png">
-              <img src="resources/headerimg/gimg_w5.png" alt="Thumbnail">
-          </a>
-        </li>
+
       </ul>
        
       <div id="overlay">
