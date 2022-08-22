@@ -59,6 +59,15 @@
         padding-bottom: 50px;
         text-align: center;
     }
+    
+    a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    a:hover{
+    font-weight: bold;
+    }
     </style>
     
 <%--     <c:if test="${mid eq null }">
@@ -98,7 +107,7 @@
                
                     <td class="td1">
                         <a href="BuyPage?p_code=${list.p_code }">
-                            <img src="${list.p_img}" width="250" height="350" style="margin-right: 50px;"><p class="p1">${list.p_name }</p></a>
+                            <img src="resources/upload/p_img/${list.p_img}" width="250" height="350" style="margin-right: 50px;"><p class="p1">${list.p_name }</p></a>
                         <a href="BuyPage?p_code=${list.p_code }"><p class="p1">${list.p_price }</p></a>
                     </td>
      </c:forEach>

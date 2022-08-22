@@ -206,7 +206,7 @@
                 <div class="cart_table_goods">
                     <a href="#" class="cart_table_link">
                         <figure class="cart_table_img">
-                            <img src="${indto.p_img }" alt="" style="display: block;">
+                            <img src="resources/upload/p_img/${indto.p_img}" alt="" style="display: block;">
                         </figure>
                     </a>
                 </div>

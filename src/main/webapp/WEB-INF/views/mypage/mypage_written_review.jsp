@@ -264,7 +264,7 @@ font-weight: bold;
                 <th>${list.p_name }</th>
                 <th>${list.r_starpoint }</th>
                 <th>${list.r_date }</th>
-                <th><a href="../review_update?p_code=${list.p_code }&o_code=${list.o_code}&r_num=${list.r_num}">수정</a></th>
+                <th><a href="review_update?p_code=${list.p_code }&o_code=${list.o_code}&r_num=${list.r_num}">수정</a></th>
             </tr>
             <input type="hidden" name="o_code" id="o_code" value="${list.o_code }"/>
                 <input type="hidden" name="p_code" id="p_code" value="${list.p_code }"/>

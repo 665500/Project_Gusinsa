@@ -3,6 +3,7 @@ package com.tech.project_shopping_mall.dao;
 import java.util.ArrayList;
 
 import com.tech.project_shopping_mall.dto.Infodto;
+import com.tech.project_shopping_mall.dto.MainGalleryDto;
 import com.tech.project_shopping_mall.dto.MainPageSearchDto;
 import com.tech.project_shopping_mall.dto.MainPageSearch_ProductsDto;
 import com.tech.project_shopping_mall.dto.ReviewDto;
@@ -46,6 +47,9 @@ public interface MainPageDao {
 	
 	public Infodto search_prouct_detail(int pcode);
 	public ArrayList<ReviewDto> product_review(int pcode, int rowStart, int rowEnd);
+	
+	public MainGalleryDto best_men();
+	public MainGalleryDto best_women();
 
 
 

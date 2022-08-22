@@ -5,67 +5,67 @@
 
 <mapper namespace="com.tech.project_shopping_mall.dao.ReviewBoardDao">
 
-	<select id="selectReviewBoardTotCount" resultType="Integer">
-		SELECT COUNT(*) FROM REVIEW
-	</select>
+   <select id="selectReviewBoardTotCount" resultType="Integer">
+      SELECT COUNT(*) FROM REVIEW
+   </select>
 
- 	<select id="reviewboard_view" resultType="com.tech.project_shopping_mall.dto.ReviewBoardDto">
-		SELECT R_NUM,P_CODE,R_STARPOINT,R_TITLE,R_CONTENTS
-			,R_IMG,MID,R_DATE,R_HIT,O_CODE
-			FROM REVIEW WHERE R_NUM=#{param1}
-	</select>
+    <select id="reviewboard_view" resultType="com.tech.project_shopping_mall.dto.ReviewBoardDto">
+      SELECT R_NUM,P_CODE,R_STARPOINT,R_TITLE,R_CONTENTS
+         ,R_IMG,MID,R_DATE,R_HIT,O_CODE
+         FROM REVIEW WHERE R_NUM=#{param1}
+   </select>
 
-	<update id="reviewboard_upHit">
-		UPDATE REVIEW
-			SET R_HIT=R_HIT+1
-			WHERE R_NUM=#{param1}
-	</update>
-	
-	<select id="reviewboard_list" resultType="com.tech.project_shopping_mall.dto.ReviewBoardDto">
-		SELECT R_NUM,P_CODE,R_STARPOINT,R_TITLE,R_CONTENTS
-		,R_IMG, MID, R_DATE,R_HIT,O_CODE
-		FROM (SELECT ROWNUM NUM, N.*FROM (SELECT * FROM REVIEW ORDER BY R_DATE DESC) N) 
-		WHERE NUM BETWEEN #{param1} AND #{param2}
-	</select>
+   <update id="reviewboard_upHit">
+      UPDATE REVIEW
+         SET R_HIT=R_HIT+1
+         WHERE R_NUM=#{param1}
+   </update>
+   
+   <select id="reviewboard_list" resultType="com.tech.project_shopping_mall.dto.ReviewBoardDto">
+      SELECT R_NUM,P_CODE,R_STARPOINT,R_TITLE,R_CONTENTS
+      ,R_IMG, MID, R_DATE,R_HIT,O_CODE
+      FROM (SELECT ROWNUM NUM, N.*FROM (SELECT * FROM REVIEW ORDER BY R_DATE DESC) N) 
+      WHERE NUM BETWEEN #{param1} AND #{param2}
+   </select>
 
-<!-- 	<insert id="insertLike">
-	INSERT INTO REVIEW VALUES(0,
-			0,0,0,0,0,#{param1},0,0,0,0)
-	
-	INSERT INTO REVIEW 
-	VALUES((SELECT NVL(MAX(r_likepoint), 0) + 1 FROM REVIEW), #{param1}, #{parma2} ,#{param3})
-	</insert>
-	
-	리뷰글 좋아요 클릭
-	<update id="updateLike" parameterType="int">
-	UPDATE REVIEW SET 
-	LIKEPOINT = LIKEPOINT+1
-	WHERE R_NUM = #{param1}
-	</update>
+<!--    <insert id="insertLike">
+   INSERT INTO REVIEW VALUES(0,
+         0,0,0,0,0,#{param1},0,0,0,0)
+   
+   INSERT INTO REVIEW 
+   VALUES((SELECT NVL(MAX(r_likepoint), 0) + 1 FROM REVIEW), #{param1}, #{parma2} ,#{param3})
+   </insert>
+   
+   리뷰글 좋아요 클릭
+   <update id="updateLike" parameterType="int">
+   UPDATE REVIEW SET 
+   LIKEPOINT = LIKEPOINT+1
+   WHERE R_NUM = #{param1}
+   </update>
 
-	리뷰글 좋아요 취소
-	<update id="updateLikeCancel" parameterType="int">
-	UPDATE REVIEW SET 
-	LIKEPOINT = LIKEPOINT-1
-	WHERE R_NUM = #{param1}
-	</update>
+   리뷰글 좋아요 취소
+   <update id="updateLikeCancel" parameterType="int">
+   UPDATE REVIEW SET 
+   LIKEPOINT = LIKEPOINT-1
+   WHERE R_NUM = #{param1}
+   </update>
 
-	좋아요 Check를 1로 만들어서 중복방지
-	<update id="updateLikeCheck">
-	UPDATE REVIEW SET R_LIKECHECK = 1
-	WHERE R_NUM = #{param1} AND MID = #{param2}
-	</update>
+   좋아요 Check를 1로 만들어서 중복방지
+   <update id="updateLikeCheck">
+   UPDATE REVIEW SET R_LIKECHECK = 1
+   WHERE R_NUM = #{param1} AND MID = #{param2}
+   </update>
 
-	좋아요 취소 시 다시 0 
-	<update id="updateLikeCheckCancel">
-	UPDATE REVIEW SET R_LIKECHECK = 0
-	WHERE R_NUM = #{param1} AND MID = #{param2}
-	</update>
-	
-	좋아요 중복방지 select문
-	<select id="likeCheck" resultType="int">
-	SELECT R_LIKECHECK FROM REVIEW WHERE MID = #{param1} and R_NUM = #{param2}
-	</select> -->
+   좋아요 취소 시 다시 0 
+   <update id="updateLikeCheckCancel">
+   UPDATE REVIEW SET R_LIKECHECK = 0
+   WHERE R_NUM = #{param1} AND MID = #{param2}
+   </update>
+   
+   좋아요 중복방지 select문
+   <select id="likeCheck" resultType="int">
+   SELECT R_LIKECHECK FROM REVIEW WHERE MID = #{param1} and R_NUM = #{param2}
+   </select> -->
 
-	 
+    
 </mapper>

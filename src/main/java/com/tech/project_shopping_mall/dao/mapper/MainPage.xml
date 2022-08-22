@@ -114,7 +114,17 @@ SELECT  * FROM  ( SELECT *  FROM PINFO ORDER BY DATA DESC ) <![CDATA[WHERE ROWNU
    </delete>
 
 
+<select id="best_men" resultType="com.tech.project_shopping_mall.dto.MainGalleryDto">
+SELECT * FROM 
+(SELECT P.P_NAME,P.P_PRICE,P.P_CODE,P.P_IMG ,P.P_IMG2,P.P_IMG3,P.P_IMG4,P.P_IMG5, R.R_STARPOINT,P.P_GENDER FROM REVIEW R, PINFO P WHERE R.P_CODE=P.P_CODE AND P.P_GENDER = '남성' ORDER BY R.R_STARPOINT DESC)
+WHERE ROWNUM BETWEEN 1 AND 1
+   </select>
 
+<select id="best_women" resultType="com.tech.project_shopping_mall.dto.MainGalleryDto">
+SELECT * FROM 
+(SELECT P.P_NAME,P.P_PRICE,P.P_CODE,P.P_IMG ,P.P_IMG2,P.P_IMG3,P.P_IMG4,P.P_IMG5, R.R_STARPOINT,P.P_GENDER FROM REVIEW R, PINFO P WHERE R.P_CODE=P.P_CODE AND P.P_GENDER = '여성' ORDER BY R.R_STARPOINT DESC)
+WHERE ROWNUM BETWEEN 1 AND 1
+   </select>
 
 
 
