@@ -335,7 +335,7 @@ counter_init();
         <div id ="menu_list">
             <nav>
             <ul class="header_menu_NEWARRIVAL">
-                <li id="product_menu_list"><a href=# id="high_con">NEW ARRIVAL</a>
+                <li id="product_menu_list"><a href="${pageContext.request.contextPath }/newarrival" id="high_con">NEW ARRIVAL</a>
     
                 </li>
             </ul>
@@ -403,28 +403,28 @@ counter_init();
                 <ul class="header_menu_Man">
                     <li id="product_menu_list"><a href="${pageContext.request.contextPath }/men" id="high_con">MEN</a>
                         <ul class="Man_Second">
-                            <li class="OUTER"  id="product_menu_list"><a href=# id="con">OUTER</a>
+                            <li class="OUTER"  id="product_menu_list"><a href="${pageContext.request.contextPath }/menouter" id="con">OUTER</a>
                                 <ul class="OUTER_Second">
-                                    <li id="product_menu_list"><a href="" id="con">JACKET</a></li>        
-                                    <li id="product_menu_list"><a href="" id="con">Coat</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Jumper</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Biazer</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menjacket" id="con">JACKET</a></li>        
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/mencoat" id="con">Coat</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menjumper" id="con">Jumper</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menblazer" id="con">Biazer</a></li> 
                                 </ul></li>
-                            <li class="TOP" id="product_menu_list"><a href=# id="con">TOP</a>
+                            <li class="TOP" id="product_menu_list"><a href="${pageContext.request.contextPath }/mentop" id="con">TOP</a>
                                 <ul class="TOP_Second">
-                                    <li id="product_menu_list"><a href="" id="con">Shirts(LS)</a></li>        
-                                    <li id="product_menu_list"><a href="" id="con">Shirts(1/2)</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Tee(LS)</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Tee(1/2)</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Sleeveless</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Knit</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Vest</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Hoodie</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Sweatshirts</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menshirtslong" id="con">Shirts(LS)</a></li>        
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menshirtshort" id="con">Shirts(1/2)</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menteelong" id="con">Tee(LS)</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menteeshort" id="con">Tee(1/2)</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/mensleeveless" id="con">Sleeveless</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menknit" id="con">Knit</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menvest" id="con">Vest</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menhoodie" id="con">Hoodie</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/mensweatshirt" id="con">Sweatshirts</a></li> 
                                 </ul></li>
-                            <li id="product_menu_list"><a href=# id="con">BOTTOM</a></li>
+                            <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menbottom" id="con">BOTTOM</a></li>
                             <li id="product_menu_list"><a href=# id="con">ACCESSORIES</a></li>
-                            <li class="LIFE" id="product_menu_list"><a href=# id="con">LIFE</a>
+                            <li class="LIFE" id="product_menu_list"><a href="${pageContext.request.contextPath }/menlife" id="con">LIFE</a>
                                 <ul class="LIFE_Second">
                                     <li id="product_menu_list"><a href="" id="con">HOME</a></li>        
                                     <li id="product_menu_list"><a href="" id="con">Beauty</a></li>   
@@ -435,35 +435,35 @@ counter_init();
                     </li>
                 </ul>
                 <ul class="header_menu_WOMEN">
-                    <li id="product_menu_list"><a href=# id="high_con">WOMEN</a>
+                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/women" id="high_con">WOMEN</a>
                         <ul class="WOMEN_Second">
-                            <li class="OUTER" id="product_menu_list"><a href=# id="con">OUTER</a>
+                            <li class="OUTER" id="product_menu_list"><a href="${pageContext.request.contextPath }/womenouter" id="con">OUTER</a>
                                 <ul class="OUTER_Second">
-                                    <li id="product_menu_list"><a href="" id="con">JACKET</a></li>        
-                                    <li id="product_menu_list"><a href="" id="con">Coat</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Jumper</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Biazer</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenjacket" id="con">JACKET</a></li>        
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womencoat" id="con">Coat</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenjumper" id="con">Jumper</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenblazer" id="con">Biazer</a></li> 
                                 </ul></li>
                             <li class="TOP" id="product_menu_list"><a href=# id="con">TOP</a>
                                 <ul class="TOP_Second">
-                                    <li id="product_menu_list"><a href="" id="con">Shirts(LS)</a></li>        
-                                    <li id="product_menu_list"><a href="" id="con">Shirts(1/2)</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Tee(LS)</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Tee(1/2)</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Sleeveless</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Knit</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Vest</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Hoodie</a></li> 
-                                    <li id="product_menu_list"><a href="" id="con">Sweatshirts</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenshirtslong" id="con">Shirts(LS)</a></li>        
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenshirtshort" id="con">Shirts(1/2)</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenteelong" id="con">Tee(LS)</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenteeshort" id="con">Tee(1/2)</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womensleeveless" id="con">Sleeveless</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenknit" id="con">Knit</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenvest" id="con">Vest</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womenhoodie" id="con">Hoodie</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/womensweatshirt" id="con">Sweatshirts</a></li> 
                                 </ul></li>
                             <li id="product_menu_list"><a href=# id="con">BOTTOM</a></li>
                             <li id="product_menu_list"><a href=# id="con">ACCESSORIES</a></li>
                             <li class="LIFE"  id="product_menu_list"><a href=# id="con">LIFE</a>
                                 <ul class="LIFE_Second">
-                                    <li id="product_menu_list"><a href="" id="con">HOME</a></li>        
-                                    <li id="product_menu_list"><a href="" id="con">Beauty</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Paper</a></li>   
-                                    <li id="product_menu_list"><a href="" id="con">Digital</a></li> 
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menwomenhome" id="con">HOME</a></li>        
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menwomenbeauty" id="con">Beauty</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menwomenpaper" id="con">Paper</a></li>   
+                                    <li id="product_menu_list"><a href="${pageContext.request.contextPath }/menwomendigital" id="con">Digital</a></li> 
                                 </ul></li>
                         </ul>
                     </li>
