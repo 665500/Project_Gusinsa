@@ -59,6 +59,15 @@
         padding-bottom: 50px;
         text-align: center;
     }
+    
+    a{
+    text-decoration: none;
+    color: black;
+    }
+    
+    a:hover{
+    font-weight: bold;
+    }
     </style>
     
 <%--     <c:if test="${mid eq null }">
