@@ -28,7 +28,7 @@
            
             <td class="td1">
                 <a href="SaleBuyPage?&p_code=${dto.p_code}&sprice=${dto.sprice }">
-                    <img src="${dto.p_img }" width="300" height="350"><p class="p1">${dto.p_name } <br /> ${dto.sprice } </p>
+                    <img src="resources/upload/p_img/${dto.p_img}" width="300" height="350"><p class="p1">${dto.p_name } <br /> ${dto.sprice } </p>
                 </a>    
             </td>
             

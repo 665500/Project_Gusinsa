@@ -282,10 +282,10 @@ function cart() {
         </figure>
     </div>
     <br>
-    <div class="div3">
+        <div class="div3">
         <figure>
-            <img src="${indto.p_img }" id="image1" 
-            width="600" height="550" style="border: 1px solid #ccc;">
+            <img src="resources/upload/p_img/${indto.p_img}" id="image1" 
+            width="590" height="600" style="border: 1px solid #ccc;">
             <figcaption> </figcaption>
         </figure>
     </div>
@@ -322,7 +322,7 @@ function cart() {
                
                     <tr>
                         <td class="td2">단품 <br>
-                           <form class="form1">47,900원</form>
+                           <form class="form1">${indto.p_price }</form>
                             <form class="form2">금액 : <div id="my_sum" name = "my_sum"></div>원</form>                       
                             <form class="form3" name = "form" method = "get"> 
                                 <input type="text" id = "amount" name="amount" value="1" size="3" onchange="change();"> 
@@ -361,13 +361,26 @@ function cart() {
         <input id="tab3" type="radio" name="tabs">
         <label for="tab3">배송/교환/환불안내</label>
      
-        <section id="content1">
+                <section id="content1">
             <p>
-                <img src="resources/img/rengoku2.jpeg" alt="rengoku2"
-                width="800" height="1000">
+                <img src="resources/upload/p_img/${indto.p_img2}" alt=""
+                width="600" height="800">
+            </p>
+            <p>
+                <img src="resources/upload/p_img/${indto.p_img3}" alt=" "
+                width="600" height="800">
+            </p>
+            <p>
+                <img src="resources/upload/p_img/${indto.p_img4}" alt=" "
+                width="600" height="800">
+            </p>
+            <p>
+                <img src="resources/upload/p_img/${indto.p_img5}" alt=" "
+                width="600" height="800">
             </p>
 
         </section>
+
     
         <section id="content2" class="content2">
         
