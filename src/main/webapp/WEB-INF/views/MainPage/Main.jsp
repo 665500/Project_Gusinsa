@@ -120,7 +120,7 @@
     <div class="img_gallery_man">
         <div class="top1" _sel="./(#3057)">
             <!--옷 1-->
-            <a href="#" style="color: black;">
+            <a href="BuyPage?p_code=${mendto.p_code }" style="color: black;">
                 <div class="bp_inner">
                     <div class="img">
                         
@@ -169,7 +169,7 @@
     <div class="img_gallery_wo">
         <div class="top1" _sel="./(#3057)">
             <!--옷 1-->
-            <a href="#" style="color: black;">
+            <a href="BuyPage?p_code=${womendto.p_code }" style="color: black;">
                 <div class="bp_inner">
                     <div class="img">
                         <img class="top1_img" src="resources/upload/p_img/${womendto.p_img }">
